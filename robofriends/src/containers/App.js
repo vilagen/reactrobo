@@ -6,52 +6,62 @@ import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry';
 import './App.css';
 
-import { setSearchField } from '../actions.js';
+import { setSearchField, requestRobots } from '../actions';
 
 const mapStateToProps = state => {
     return {
-        searchField: state.searchField
+        searchField: state.searchRobots.searchField,
+        robots: state.requestRobots.robots,
+        isPending: state.requestRobots.isPending,
+        error: state.requestRobots.error
     };
 };
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onSearchChange: (event) => dispatch(setSearchField(event.target.value))
+        onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+        onRequestRobots: () => dispatch(requestRobots()) //same as doing requestRobots(dispatch)
     };
 };
 
 // so it seems like the state is the parent, the objects in it are the children (props). 
 
 class App extends Component {
-    constructor() {
-        super()
-        this.state = {
-            robots: [],
-            // searchfield: ''
-        }
-        console.log('constructor');
-    };
+
+//     constructor() {
+//         super()
+//         this.state = {
+//             robots: [],
+//             // searchfield: ''
+//         }
+//         console.log('constructor');
+//     };
 
     // onSearchChange = (event) => {
     //     this.setState({ searchfield: event.target.value })
     //         console.log(this.state.searchfield);
     // };
 
-    componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response => response.json())
-        .then(users => this.setState({ robots: users }));
+    // componentDidMount() {
+    //     fetch('https://jsonplaceholder.typicode.com/users')
+    //     .then(response => response.json())
+    //     .then(users => this.setState({ robots: users }));
+    // };
+
+     componentDidMount() {
+        this.props.onRequestRobots();
     };
 
     render() {
         // const { robots, searchfield } = this.state; // can remove because we are using redux and don't need the searchfield that was once active there.
-        const { robots } = this.state;
-        const { searchField, onSearchChange } = this.props;
+        // const { robots } = this.state;
+        const { searchField, onSearchChange, robots, isPending } = this.props;
         const filteredRobots = robots.filter(robot => {
             // return robot.name.toLowerCase().includes(searchfield.toLowerCase()) // commented out after using redux.
             return robot.name.toLowerCase().includes(searchField.toLowerCase())
         })
-        return  (!robots.length) ? //!robots.length is saying the same thing as robots.length === 0
+        return isPending ?
+        // return  (!robots.length) ? //!robots.length is saying the same thing as robots.length === 0
             <h1>Loading</h1> :
             (
                 <div className='tc'>
