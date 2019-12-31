@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/reactrobo/precache-manifest.4681c869d8f1aa5c760996ee2fb17884.js"
+  "/reactrobo/precache-manifest.0278d210686ee8ac1d3bef43c73519fc.js"
 );
 
 self.addEventListener('message', (event) => {
