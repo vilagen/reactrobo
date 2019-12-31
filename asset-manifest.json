@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/reactrobo/static/css/main.47d3c139.chunk.css",
-    "main.js": "/reactrobo/static/js/main.75a0f275.chunk.js",
-    "main.js.map": "/reactrobo/static/js/main.75a0f275.chunk.js.map",
+    "main.js": "/reactrobo/static/js/main.ade1f12a.chunk.js",
+    "main.js.map": "/reactrobo/static/js/main.ade1f12a.chunk.js.map",
     "runtime-main.js": "/reactrobo/static/js/runtime-main.d92a83b0.js",
     "runtime-main.js.map": "/reactrobo/static/js/runtime-main.d92a83b0.js.map",
     "static/js/2.83805e3f.chunk.js": "/reactrobo/static/js/2.83805e3f.chunk.js",
     "static/js/2.83805e3f.chunk.js.map": "/reactrobo/static/js/2.83805e3f.chunk.js.map",
     "index.html": "/reactrobo/index.html",
-    "precache-manifest.df240927ab98ecac964276c0a0bf7a13.js": "/reactrobo/precache-manifest.df240927ab98ecac964276c0a0bf7a13.js",
+    "precache-manifest.fcb47f554da6994d5f3fba682975f46e.js": "/reactrobo/precache-manifest.fcb47f554da6994d5f3fba682975f46e.js",
     "service-worker.js": "/reactrobo/service-worker.js",
     "static/css/main.47d3c139.chunk.css.map": "/reactrobo/static/css/main.47d3c139.chunk.css.map",
     "static/media/App.css": "/reactrobo/static/media/SEGA.12a3db8b.woff"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d92a83b0.js",
     "static/js/2.83805e3f.chunk.js",
     "static/css/main.47d3c139.chunk.css",
-    "static/js/main.75a0f275.chunk.js"
+    "static/js/main.ade1f12a.chunk.js"
   ]
 }

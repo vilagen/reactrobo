@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "60c6621bd4ea291a5a7246b84fa9b085",
+    "revision": "849942c5055662a9051100b8dd1106bd",
     "url": "/reactrobo/index.html"
   },
   {
-    "revision": "6acc49103945844091f3",
+    "revision": "3e8a0d7da1a9350c90f5",
     "url": "/reactrobo/static/css/main.47d3c139.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactrobo/static/js/2.83805e3f.chunk.js"
   },
   {
-    "revision": "6acc49103945844091f3",
-    "url": "/reactrobo/static/js/main.75a0f275.chunk.js"
+    "revision": "3e8a0d7da1a9350c90f5",
+    "url": "/reactrobo/static/js/main.ade1f12a.chunk.js"
   },
   {
     "revision": "4c435e8fa744c2d7a53e",
